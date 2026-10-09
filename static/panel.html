@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chess Coach</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <section id="status" class="status">Waiting for a board…</section>
+
+  <section id="analysis" hidden>
+    <div class="eval">
+      <div class="evalbar"><div id="evalfill"></div></div>
+      <div>
+        <div id="evaltext" class="evaltext"></div>
+        <div id="verdict" class="muted"></div>
+      </div>
+    </div>
+
+    <div class="best">
+      <div class="label" id="bestlabel"></div>
+      <div id="bestmove" class="bestmove"></div>
+      <div id="depth" class="muted small"></div>
+    </div>
+
+    <div id="warnbox" class="box warn" hidden>
+      <div class="label" data-i18n="watchOut">Watch out</div>
+      <ul id="warnings"></ul>
+    </div>
+
+    <div class="box">
+      <div class="label" data-i18n="why">Why</div>
+      <ul id="reasons"></ul>
+    </div>
+
+    <div class="box">
+      <div class="label" data-i18n="mainLine">Main line</div>
+      <div id="line" class="line"></div>
+    </div>
+
+    <div class="box" id="altbox" hidden>
+      <div class="label" data-i18n="otherOptions">Other options</div>
+      <ul id="alts" class="alts"></ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <span class="muted small" data-i18n="sideToMove">Side to move</span>
+      <div class="seg" id="turnseg">
+        <button data-turn="auto" data-i18n="auto">Auto</button><button data-turn="w" data-i18n="white">White</button><button data-turn="b" data-i18n="black">Black</button>
+      </div>
+    </div>
+    <div class="row">
+      <span class="muted small" data-i18n="depth">Depth</span>
+      <div class="seg" id="depthseg">
+        <button data-depth="12" data-i18n="fast">Fast</button><button data-depth="16" data-i18n="normal">Normal</button><button data-depth="20" data-i18n="deep">Deep</button>
+      </div>
+    </div>
+    <div class="row">
+      <span class="muted small" data-i18n="language">Language</span>
+      <div class="seg" id="langseg">
+        <button data-lang="auto" data-i18n="auto">Auto</button><button data-lang="en">English</button><button data-lang="zh">中文</button>
+      </div>
+    </div>
+    <div class="row">
+      <label class="small"><input type="checkbox" id="arrows"> <span data-i18n="showArrows">Show arrows on board</span></label>
+    </div>
+  </footer>
+  <script src="panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "extName": { "message": "Chess Coach" },
+  "extDescription": { "message": "Reads the chess.com board, suggests the best move and explains why. Learning mode: turns off during games against people." },
+  "minimize": { "message": "Minimize" }
+}

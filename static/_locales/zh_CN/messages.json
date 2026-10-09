@@ -1,0 +1,5 @@
+{
+  "extName": { "message": "国际象棋教练" },
+  "extDescription": { "message": "读取 chess.com 棋盘，给出最佳着法并用中文解释原因。学习模式：与真人对局时自动关闭。" },
+  "minimize": { "message": "最小化" }
+}

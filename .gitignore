@@ -1,0 +1,5 @@
+node_modules/
+# Build output: regenerate with `npm run build`
+extension/
+# Packaged store uploads
+store/*.zip

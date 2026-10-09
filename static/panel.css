@@ -1,0 +1,51 @@
+:root {
+  --bg: #262421;
+  --panel: #312e2b;
+  --text: #ece9e4;
+  --muted: #a8a49e;
+  --green: #81b64c;
+  --red: #e5584f;
+  --border: #45413c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 12px;
+}
+[hidden] { display: none !important; }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+.label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 4px; }
+.status { padding: 10px 12px; border-radius: 8px; background: var(--panel); margin-bottom: 10px; }
+.status.off { border-left: 3px solid var(--red); }
+.status:empty { display: none; }
+
+.eval { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+.evalbar { width: 14px; height: 48px; background: #403d39; border-radius: 3px; overflow: hidden; display: flex; flex-direction: column-reverse; flex: none; }
+#evalfill { background: #f0f0f0; height: 50%; transition: height .3s; }
+.evaltext { font-size: 20px; font-weight: 700; }
+
+.best { background: var(--panel); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; }
+.bestmove { font-size: 30px; font-weight: 800; color: var(--green); }
+
+.box { background: var(--panel); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; }
+.box.warn { border-left: 3px solid var(--red); }
+ul { margin: 0; padding-left: 18px; }
+li + li { margin-top: 4px; }
+.line span { margin-right: 6px; }
+.line .mine { color: var(--green); font-weight: 600; }
+.alts { list-style: none; padding: 0; }
+.alts li { display: flex; justify-content: space-between; }
+
+footer { border-top: 1px solid var(--border); padding-top: 10px; display: grid; gap: 8px; }
+.row { display: flex; justify-content: space-between; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.seg button {
+  background: transparent; color: var(--muted); border: 0; padding: 4px 9px; font: inherit; font-size: 12px; cursor: pointer;
+}
+.seg button + button { border-left: 1px solid var(--border); }
+.seg button.on { background: var(--green); color: #fff; }
+input[type="checkbox"] { accent-color: var(--green); vertical-align: -2px; }
