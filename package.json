@@ -1,6 +1,6 @@
 {
   "name": "chess-coach",
-  "version": "1.0.0",
+  "version": "0.2.1",
   "description": "Chess.com coach overlay: best move + explanation",
   "main": "index.js",
   "scripts": {
