@@ -44,4 +44,8 @@ After changing code, run `npm run build` and click the reload icon on the extens
 
 `npm test` runs the board tests and explanation tests that use the real engine.
 
-Stockfish is GPLv3; see `extension/engine/LICENSE-stockfish.txt`.
+## License
+
+Chess Coach is free software under the GNU General Public License v3.0 or later. See [LICENSE](LICENSE).
+
+It bundles Stockfish, which is also GPLv3; its license ships with the extension as `engine/LICENSE-stockfish.txt`.
